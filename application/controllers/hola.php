@@ -36,5 +36,16 @@ class Hola extends CI_Controller {
 	{
 		echo "Hola amigo ".$nombre.", tienes ".$edad;
 	}
+
+	function _calcular($ano)
+	{
+		return 2014-$ano;
+	}
+
+	function edad($ano)
+	{
+		$edad = $this->_calcular($ano);
+		echo "tu edad es ".$edad;
+	}
 }
 ?>
