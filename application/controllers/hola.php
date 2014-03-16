@@ -31,5 +31,10 @@ class Hola extends CI_Controller {
 				break;
 		}
 	}
+
+	function saludoargumentos($nombre,$edad)
+	{
+		echo "Hola amigo ".$nombre.", tienes ".$edad;
+	}
 }
 ?>
